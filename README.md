@@ -18,7 +18,7 @@
 
   |   |  |
   | ------------- | ------------- |
-  | URL  | `<host>/ratings`   |
+  | URL  | `/ratings`   |
   | Method | GET   |
   | Description | Fetch user rating, meta data, average_rating and count for individual ratings |
 
@@ -31,6 +31,10 @@
   | **order_by** | order in which user rating is to be fetched, defaults to creation_date  |
   | **order_dir** | direction of the order, ASC or DESC, defaults to ASC   |
 
+  Request Format
+  ```
+  localhost:3000/ratings?product_id=1&page=1&size=2
+  ```  
   Response Format
 
   ```
